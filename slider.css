@@ -1,0 +1,63 @@
+/*STYLE CSS*/
+html,body {
+	margin:0;
+	outline: none;
+}
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#slider {
+	display: block;
+	margin: 0 auto;
+	max-width: 960px;
+	position: relative;
+	height: 420px;
+	margin-bottom: 10px;
+	box-shadow: #999 -1px 5px 5px;
+	
+}
+#slider>img{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#slider>img:first-child {
+	display: block;
+}
+#slider>img:nth-child(n+2){
+	display: none;
+}
+
+
+/*------------------CONTROLS-------------*/
+#controls {
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+}
+#controls button{
+	padding: 5px 15px;
+}
+
+
+
+
+/*--------PAGINATION-------------------*/
+#pagination {
+	float: right;
+	margin-top: 5px;
+}
+#pagination span {
+	font-weight: bold;
+	cursor: pointer;
+	margin: 5px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    border: 2px solid #222;
+}
+.active {
+	color: #fff;
+	background: #444;
+}
